@@ -85,7 +85,7 @@ setInterval(function(){
 
     <!-- Home -->
     <div class="home" id="home">
-        <a><img src="<%= client.user.avatarURL({ dynamic: true, format: "png", size: 1024 }); %>" style="border-radius: 50%; width: 200px; margin-top: 3%;"/></a><br/>
+        <a><img src="<%= client.user.avatarURL({ dynamic: true, format: "png", size: 1024 }) %>" style="border-radius: 50%; width: 200px; margin-top: 3%;"/></a><br/>
         <a style="font-size: 30px;" class="hometitle"><%= client.user.username %> 🦋</a>
         <p class="homedesc">Um bot simples com funcionalidades simples e incorporação RSS!</p>
         <p class="homedesc">Estou em <%= client.guilds.cache.size %> servers!</p>
